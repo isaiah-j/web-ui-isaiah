@@ -76,9 +76,46 @@ img {
 	max-height: 100%;
 }
 
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+        display: block;
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
+h1 {
+	animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    backface-visibility: hidden;
+}
 
+h3{
+    animation-name: fadeInRight;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    backface-visibility: hidden;
+
+}
 .section-a {
 	display: flex;
 	justify-content: end;
@@ -88,8 +125,8 @@ img {
 	border: 1px solid black;
 }
 
-.content-container{
-    width: 100%;
-    display: flex;
-    justify-content: end;
+.content-container {
+	width: 100%;
+	display: flex;
+	justify-content: end;
 }
