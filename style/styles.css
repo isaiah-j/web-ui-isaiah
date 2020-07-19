@@ -14,8 +14,24 @@ h2 {
 }
 
 .hamburger{
+	display: flex;
+	justify-content: center;
+
 	color: red;
 	position: fixed;
+	z-index: 1;
+	left: 92%;
+	top: 8%;
+	width: 4rem;
+	background-color: #f6f6f6;
+	padding: 1rem;
+	border-radius: 50%;
+	border: 1px solid grey;
+}
+
+.hamburger i{
+	font-size: 2rem;
+
 }
 
 img{
