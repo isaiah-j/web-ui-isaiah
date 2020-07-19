@@ -7,13 +7,19 @@
 	text-decoration: none;
 }
 
+h1,
+h2 {
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	font-family: 'Roboto', sans-serif;
+}
+
 
 img{
 	width: 50%;
 }
 
 .container {
-	width: 90%;
+	width: 98%;
 	margin: 0 auto;
 }
 
@@ -35,7 +41,6 @@ body {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	line-height: 1.7;
-	padding: ;
 	background-color: #f6f6f6;
 }
 
@@ -50,6 +55,7 @@ header {
 	background-position: center;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	color: #fff; 
+	margin-top: 1%;
 }
 
 .heading-content {
@@ -61,11 +67,7 @@ header {
 	font-size: 3vw;
 }
 
-h1,
-h2 {
-	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-	font-family: 'Roboto', sans-serif;
-}
+
 
 .btn-white {
 	background-color: white;
@@ -81,7 +83,7 @@ h2 {
 .btn:link,
 .btn:visited {
 	text-transform: uppercase;
-	padding: 1rem 2rem;
+	padding: 0.5rem 1.5rem;
 	border-radius: 100px;
 	animation-name: fadeInUp;
 	animation-duration: 0.5s;
@@ -107,55 +109,20 @@ img {
 	max-height: 100%;
 }
 
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		transform: translateY(-100px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
-@keyframes fadeInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(100px);
-		display: block;
-	}
-	80% {
-		transform: translateX(-20px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
 h1 {
-	animation-name: fadeInDown;
+	/* animation-name: fadeInDown;
 	animation-timing-function: ease-out;
 	animation-duration: 1s;
-	backface-visibility: hidden;
+	backface-visibility: hidden; */
 }
 
 h2 {
-	animation-name: fadeInRight;
+	/* animation-name: fadeInRight;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
-	backface-visibility: hidden;
+	backface-visibility: hidden; */
 }
 
 .checklist {
@@ -209,7 +176,7 @@ footer {
 }
 
 nav {
-	width: 30%;
+	width: 40%;
 	border-top: 1px solid rgb(155, 155, 155);
 }
 
@@ -243,6 +210,7 @@ nav {
 	.nav-links{
 		flex-direction: column;
 		margin: 3%;
+		align-items: center;
 	}
 	.btn{
 		width: 100%;
@@ -266,5 +234,42 @@ nav {
 	.section-b,
 	.section-c {
 		width: 95%;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+		display: block;
+	}
+	80% {
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
